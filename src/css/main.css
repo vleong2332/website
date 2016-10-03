@@ -88,11 +88,52 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	opacity: 1;
+	transition: opacity 500ms ease;
+}
 
+html {
+	font-family: 'Raleway', sans-serif;
+}
 
+h2 {
+	font-family: 'Lobster', cursive;
+}
 
+ul {
+	list-style-type: none;
+}
 
+.container {
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
 
+.btn {
+	display: block;
+	text-decoration: none;
+	background-color: #FF5200;
+	padding: 1rem 2rem;
+	color: #FFF;
+	width: auto;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.btn:hover {
+	background-color: #FF6319;
+}
+
+.btn-action {
+	font-size: 150%;
+}
 
 
 
@@ -107,6 +148,14 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+/*
+ * Make element completely transparent
+ */
+
+.opaque {
+	opacity: 0 !important;
+}
 
 /*
  * Hide visually and from screen readers

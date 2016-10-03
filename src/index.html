@@ -10,23 +10,62 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <script src="https://use.fontawesome.com/13890ee7d5.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="home opaque">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="img/logo_24x24.png" alt="Home" /></a>
+                </div>
+                <input type="checkbox" id="mobile-nav-trigger" class="mobile-nav-trigger visuallyhidden" />
+                <label class="burger" for="mobile-nav-trigger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <ul class="menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Hi, I'm Vicky Leong.</h1>
+                <div class="text-carousel">
+                    <p class="carousel-item">I am a web developer.</p>
+                    <p class="carousel-item">I do front-end development.</p>
+                    <p class="carousel-item">I create websites.</p>
+                    <p class="carousel-item">I design web pages.</p>
+                    <p class="carousel-item">I make web apps.</p>
+                </div>
+                <img class="hero_popup" src="img/web_page.svg" alt="Web Page" />
+            </div>
+        </section>
+
+        <section class="top-content">
+            <div class="container">
+                <h2 class="title">Websites that don't suck</h2>
+                <p class="subtitle">Every website I make is uniquely handcrafted, not cut from a template. If you need a website that stands out...</p>
+                <a href="#" class="btn btn-action lets-talk">Let's talk</a>
+            </div>
+        </section>
 
         <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
         <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+        <!-- //-beg- concat_js -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <!-- //-end- concat_js -->
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
