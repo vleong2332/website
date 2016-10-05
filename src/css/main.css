@@ -1,3 +1,5 @@
+@import 'nav.css';
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -105,6 +107,32 @@ ul {
 	list-style-type: none;
 }
 
+section.content {
+    padding: 6rem 0;
+    display: block;
+}
+
+.content.content-white {
+    background-color: #FFF;
+    color: #333;
+}
+
+.content.content-secondary {
+    background-color: #962300;
+    color: #FFF;
+}
+
+.content.content-tertiary {
+    background-color: #966e00;
+    color: #FFF;
+}
+
+.content.content-quartiary {
+    background-color: #440096;
+    background-image: linear-gradient(#440096, #000 175%);
+    color: #FFF;
+}
+
 .container {
 	padding: 0 1rem;
 	display: flex;
@@ -134,9 +162,6 @@ ul {
 .btn-action {
 	font-size: 150%;
 }
-
-
-
 
 
 
