@@ -144,26 +144,37 @@ section.content {
 }
 
 .btn {
-	display: block;
+	/*display: block;*/
+    align-self: flex-start;
 	text-decoration: none;
-	background-color: #FF5200;
 	padding: 1rem 2rem;
-	color: #FFF;
-	width: auto;
+	/*width: auto;*/
 	text-align: center;
 	cursor: pointer;
 	border-radius: 3px;
-}
-
-.btn:hover {
-	background-color: #FF6319;
 }
 
 .btn-action {
 	font-size: 150%;
 }
 
+.content-white .btn {
+    background-color: #FF5200;
+    color: #FFF;
+}
 
+.content-white .btn:hover {
+    background-color: #FF6319;
+}
+
+.content-quartiary .btn {
+    background-color: #966E00;
+    color: #FFF;
+}
+
+.content-quartiary .btn:hover {
+    background-color: #A77F11;
+}
 
 
 

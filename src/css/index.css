@@ -72,14 +72,20 @@
 
 .feat.feat-h {
     flex: 1 1 350px;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .feat.feat-h .feat-icon {
     flex: 0 0 36px;
     width: 36px;
     height: 36px;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.why-hire-me,
+.feat-text {
+    text-align: center;
 }
 
 .feat-text {
@@ -94,6 +100,11 @@
     color: inherit;
 }
 
+.check-availability {
+    margin-top: 2.5rem;
+    align-self: center;
+}
+
 
 
 @media only screen and (min-width: 490px) {
@@ -103,8 +114,17 @@
         right: 10px;
         transform: translateY(50%);
     }
-}
 
-@media only screen and (min-width: 490px) {
+    .why-hire-me,
+    .feat-text {
+        text-align: left;
+    }
 
+    .feat.feat-h {
+        flex-direction: row;
+    }
+    .feat.feat-h .feat-icon {
+        margin-right: 1rem;
+        align-self: flex-start;
+    }
 }
