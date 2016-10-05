@@ -64,14 +64,14 @@
 }
 
 .feat {
-    margin: 1rem 0;
+    margin: 1rem;
     flex: 0 0 300px;
     display: flex;
     flex-direction: column;
 }
 
 .feat.feat-h {
-    flex: 0 0 450px;
+    flex: 1 1 350px;
     flex-direction: row;
 }
 
