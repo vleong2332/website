@@ -84,8 +84,13 @@
 }
 
 .why-hire-me,
-.feat-text {
+.feat-text,
+.feat-work {
     text-align: center;
+}
+
+.feat-work {
+    margin-bottom: 2rem;
 }
 
 .feat-text {
@@ -105,7 +110,130 @@
     align-self: center;
 }
 
+/* ==========================================================================
+   Featured Work
+   ========================================================================== */
 
+.work-list {
+    width: auto;
+    margin: -0.25rem -1rem;  /* .work margin, .container padding */
+    padding: 0 0.75rem;  /* .work-list margin (1rem) - .work margin (0.25rem) */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.work {
+    flex: 1 1 320px;
+    box-sizing: border-box;
+    height: 300px;
+    margin: 0.25rem;  /* to keep things spaced and aligned correctly, make sure to adjust .work-list padding as well */
+    background-color: #FFF;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transition: transform 333ms ease;
+}
+.work::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 333ms ease;
+}
+.work:hover::before {
+    transform: scale(1.1);
+}
+.work-info {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 66.67%;
+    border-radius: inherit;
+    transition: top 333ms ease,
+                background-color 500ms ease;
+}
+.work .work-info:hover {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.work .work-info.light:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.work-info-title {
+    margin-top: 0;
+    margin-bottom: 3.15rem;  /* May want to readjust if title's weird */
+    font-size: 1.7rem;
+}
+.work-info ul {
+    padding-left: 0;
+}
+.work-info-brief {
+    margin-right: 2.5rem;
+}
+.work-info-links {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.75rem;
+}
+.work-info a {
+    color: #FFF;
+    transition: color 333ms ease;
+}
+.work-info.light a {
+    color: #333;   
+}
+.work-info a:hover {
+    color: #FF5200;
+}
+
+/* ==========================================================================
+   Featured Work (Specific)
+   ========================================================================== */
+
+.work.translation-database::before {
+    background: url('../img/td_world_map.png') center / cover no-repeat #FFF;
+}
+.translation-database .work-info {
+    background-color: #009688;
+    color: #FFF;
+}
+.work.tr-website::before {
+    background: url('../img/tr_banner.png') center / cover no-repeat #FFF;
+}
+.tr-website .work-info {
+    background-color: #C2185B;
+    color: #FFF;
+}
+.work.bibletechs::before {
+    background: url('../img/bibletechs_banner.png') center / cover no-repeat #FFF;
+}
+.bibletechs .work-info {
+    background-color: #FFF;
+    color: #333;
+}
+.work.tr-app::before {
+    background: url('../img/tr_app_framed.png') center / cover no-repeat #FFF;
+}
+.tr-app .work-info {
+    background-color: #2095F2;
+    color: #FFF;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
 @media only screen and (min-width: 490px) {
     .hero_popup {
@@ -115,8 +243,13 @@
         transform: translateY(50%);
     }
 
+    .top-content .subtitle {
+        width: 75%;
+    }
+
     .why-hire-me,
-    .feat-text {
+    .feat-text,
+    .feat-work {
         text-align: left;
     }
 
@@ -126,5 +259,9 @@
     .feat.feat-h .feat-icon {
         margin-right: 1rem;
         align-self: flex-start;
+    }
+
+    .work .work-info h1 {
+        font-size: 1.9rem;
     }
 }
