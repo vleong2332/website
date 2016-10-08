@@ -159,15 +159,14 @@
     position: absolute;
     top: 66.67%;
     border-radius: inherit;
+    background-color: #333;
+    color: #FFF;
     transition: top 333ms ease,
                 background-color 500ms ease;
 }
 .work .work-info:hover {
     top: 0;
     background-color: rgba(0, 0, 0, 0.85);
-}
-.work .work-info.light:hover {
-    background-color: rgba(255, 255, 255, 0.85);
 }
 .work-info-title {
     margin-top: 0;
@@ -204,30 +203,14 @@
 .work.translation-database::before {
     background: url('../img/td_world_map.png') center / cover no-repeat #FFF;
 }
-.translation-database .work-info {
-    background-color: #009688;
-    color: #FFF;
-}
 .work.tr-website::before {
     background: url('../img/tr_banner.png') center / cover no-repeat #FFF;
-}
-.tr-website .work-info {
-    background-color: #C2185B;
-    color: #FFF;
 }
 .work.bibletechs::before {
     background: url('../img/bibletechs_banner.png') center / cover no-repeat #FFF;
 }
-.bibletechs .work-info {
-    background-color: #FFF;
-    color: #333;
-}
 .work.tr-app::before {
     background: url('../img/tr_app_framed.png') center / cover no-repeat #FFF;
-}
-.tr-app .work-info {
-    background-color: #2095F2;
-    color: #FFF;
 }
 
 
